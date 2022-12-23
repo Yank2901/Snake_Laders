@@ -31,8 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame));
             this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlBoard = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctImg9 = new System.Windows.Forms.PictureBox();
+            this.pctImg8 = new System.Windows.Forms.PictureBox();
+            this.pctImg7 = new System.Windows.Forms.PictureBox();
+            this.pctImg6 = new System.Windows.Forms.PictureBox();
+            this.pctImg5 = new System.Windows.Forms.PictureBox();
+            this.pctImg4 = new System.Windows.Forms.PictureBox();
+            this.pctImg3 = new System.Windows.Forms.PictureBox();
+            this.pctImg2 = new System.Windows.Forms.PictureBox();
+            this.pctImg1 = new System.Windows.Forms.PictureBox();
             this.pnlSlide = new System.Windows.Forms.Panel();
             this.pnlPlayers = new System.Windows.Forms.Panel();
             this.pnlDice = new System.Windows.Forms.Panel();
@@ -76,10 +83,18 @@
             this.lblPlayer1 = new System.Windows.Forms.Label();
             this.pnlTittle = new System.Windows.Forms.Panel();
             this.lblJugadores = new System.Windows.Forms.Label();
+            this.numP = new System.Windows.Forms.Label();
             this.pnlContent.SuspendLayout();
             this.pnlBoard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg1)).BeginInit();
             this.pnlSlide.SuspendLayout();
             this.pnlPlayers.SuspendLayout();
             this.pnlDice.SuspendLayout();
@@ -110,6 +125,7 @@
             // 
             this.pnlContent.BackColor = System.Drawing.Color.LightGray;
             this.pnlContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlContent.Controls.Add(this.numP);
             this.pnlContent.Controls.Add(this.pnlBoard);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(0, 0);
@@ -125,34 +141,127 @@
             this.pnlBoard.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pnlBoard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBoard.BackgroundImage")));
             this.pnlBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBoard.Controls.Add(this.pictureBox2);
-            this.pnlBoard.Controls.Add(this.pictureBox1);
+            this.pnlBoard.Controls.Add(this.pctImg9);
+            this.pnlBoard.Controls.Add(this.pctImg8);
+            this.pnlBoard.Controls.Add(this.pctImg7);
+            this.pnlBoard.Controls.Add(this.pctImg6);
+            this.pnlBoard.Controls.Add(this.pctImg5);
+            this.pnlBoard.Controls.Add(this.pctImg4);
+            this.pnlBoard.Controls.Add(this.pctImg3);
+            this.pnlBoard.Controls.Add(this.pctImg2);
+            this.pnlBoard.Controls.Add(this.pctImg1);
             this.pnlBoard.Location = new System.Drawing.Point(20, 20);
             this.pnlBoard.Name = "pnlBoard";
             this.pnlBoard.Size = new System.Drawing.Size(960, 960);
             this.pnlBoard.TabIndex = 1;
             // 
-            // pictureBox2
+            // pctImg9
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(26, 788);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.pctImg9.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg9.Image = ((System.Drawing.Image)(resources.GetObject("pctImg9.Image")));
+            this.pctImg9.Location = new System.Drawing.Point(26, 737);
+            this.pctImg9.Name = "pctImg9";
+            this.pctImg9.Size = new System.Drawing.Size(50, 50);
+            this.pctImg9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg9.TabIndex = 4;
+            this.pctImg9.TabStop = false;
+            this.pctImg9.Visible = false;
             // 
-            // pictureBox1
+            // pctImg8
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 884);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.pctImg8.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg8.Image = ((System.Drawing.Image)(resources.GetObject("pctImg8.Image")));
+            this.pctImg8.Location = new System.Drawing.Point(26, 737);
+            this.pctImg8.Name = "pctImg8";
+            this.pctImg8.Size = new System.Drawing.Size(50, 50);
+            this.pctImg8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg8.TabIndex = 4;
+            this.pctImg8.TabStop = false;
+            this.pctImg8.Visible = false;
+            // 
+            // pctImg7
+            // 
+            this.pctImg7.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg7.Image = ((System.Drawing.Image)(resources.GetObject("pctImg7.Image")));
+            this.pctImg7.Location = new System.Drawing.Point(26, 737);
+            this.pctImg7.Name = "pctImg7";
+            this.pctImg7.Size = new System.Drawing.Size(50, 50);
+            this.pctImg7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg7.TabIndex = 4;
+            this.pctImg7.TabStop = false;
+            this.pctImg7.Visible = false;
+            // 
+            // pctImg6
+            // 
+            this.pctImg6.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg6.Image = ((System.Drawing.Image)(resources.GetObject("pctImg6.Image")));
+            this.pctImg6.Location = new System.Drawing.Point(26, 737);
+            this.pctImg6.Name = "pctImg6";
+            this.pctImg6.Size = new System.Drawing.Size(50, 50);
+            this.pctImg6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg6.TabIndex = 4;
+            this.pctImg6.TabStop = false;
+            this.pctImg6.Visible = false;
+            // 
+            // pctImg5
+            // 
+            this.pctImg5.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg5.Image = ((System.Drawing.Image)(resources.GetObject("pctImg5.Image")));
+            this.pctImg5.Location = new System.Drawing.Point(26, 737);
+            this.pctImg5.Name = "pctImg5";
+            this.pctImg5.Size = new System.Drawing.Size(50, 50);
+            this.pctImg5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg5.TabIndex = 4;
+            this.pctImg5.TabStop = false;
+            this.pctImg5.Visible = false;
+            // 
+            // pctImg4
+            // 
+            this.pctImg4.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg4.Image = ((System.Drawing.Image)(resources.GetObject("pctImg4.Image")));
+            this.pctImg4.Location = new System.Drawing.Point(26, 737);
+            this.pctImg4.Name = "pctImg4";
+            this.pctImg4.Size = new System.Drawing.Size(50, 50);
+            this.pctImg4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg4.TabIndex = 4;
+            this.pctImg4.TabStop = false;
+            this.pctImg4.Visible = false;
+            // 
+            // pctImg3
+            // 
+            this.pctImg3.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg3.Image = ((System.Drawing.Image)(resources.GetObject("pctImg3.Image")));
+            this.pctImg3.Location = new System.Drawing.Point(26, 737);
+            this.pctImg3.Name = "pctImg3";
+            this.pctImg3.Size = new System.Drawing.Size(50, 50);
+            this.pctImg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg3.TabIndex = 4;
+            this.pctImg3.TabStop = false;
+            this.pctImg3.Visible = false;
+            // 
+            // pctImg2
+            // 
+            this.pctImg2.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg2.Image = ((System.Drawing.Image)(resources.GetObject("pctImg2.Image")));
+            this.pctImg2.Location = new System.Drawing.Point(26, 737);
+            this.pctImg2.Name = "pctImg2";
+            this.pctImg2.Size = new System.Drawing.Size(50, 50);
+            this.pctImg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg2.TabIndex = 4;
+            this.pctImg2.TabStop = false;
+            this.pctImg2.Visible = false;
+            // 
+            // pctImg1
+            // 
+            this.pctImg1.BackColor = System.Drawing.Color.Transparent;
+            this.pctImg1.Image = ((System.Drawing.Image)(resources.GetObject("pctImg1.Image")));
+            this.pctImg1.Location = new System.Drawing.Point(26, 737);
+            this.pctImg1.Name = "pctImg1";
+            this.pctImg1.Size = new System.Drawing.Size(50, 50);
+            this.pctImg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctImg1.TabIndex = 4;
+            this.pctImg1.TabStop = false;
+            this.pctImg1.Visible = false;
             // 
             // pnlSlide
             // 
@@ -623,6 +732,16 @@
             this.lblJugadores.TabIndex = 0;
             this.lblJugadores.Text = "Jugadores:";
             // 
+            // numP
+            // 
+            this.numP.AutoSize = true;
+            this.numP.Location = new System.Drawing.Point(4, 4);
+            this.numP.Name = "numP";
+            this.numP.Size = new System.Drawing.Size(14, 16);
+            this.numP.TabIndex = 2;
+            this.numP.Text = "2";
+            this.numP.Visible = false;
+            // 
             // frmGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -630,13 +749,23 @@
             this.ClientSize = new System.Drawing.Size(1300, 1000);
             this.Controls.Add(this.pnlSlide);
             this.Controls.Add(this.pnlContent);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serpientes y Escaleras";
             this.Load += new System.EventHandler(this.frmGame_Load);
             this.pnlContent.ResumeLayout(false);
+            this.pnlContent.PerformLayout();
             this.pnlBoard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctImg1)).EndInit();
             this.pnlSlide.ResumeLayout(false);
             this.pnlPlayers.ResumeLayout(false);
             this.pnlDice.ResumeLayout(false);
@@ -722,8 +851,16 @@
         private System.Windows.Forms.Label lblPlayer1;
         private System.Windows.Forms.Panel pnlTittle;
         private System.Windows.Forms.Label lblJugadores;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pctImg9;
+        private System.Windows.Forms.PictureBox pctImg8;
+        private System.Windows.Forms.PictureBox pctImg7;
+        private System.Windows.Forms.PictureBox pctImg6;
+        private System.Windows.Forms.PictureBox pctImg5;
+        private System.Windows.Forms.PictureBox pctImg4;
+        private System.Windows.Forms.PictureBox pctImg3;
+        private System.Windows.Forms.PictureBox pctImg2;
+        private System.Windows.Forms.PictureBox pctImg1;
+        public System.Windows.Forms.Label numP;
     }
 }
 

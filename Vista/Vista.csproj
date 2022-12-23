@@ -58,10 +58,19 @@
     <Compile Include="frmGame.Designer.cs">
       <DependentUpon>frmGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGame.resx">
       <DependentUpon>frmGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,6 +112,7 @@
     <Content Include="Imagenes\dice4.png" />
     <Content Include="Imagenes\dice5.png" />
     <Content Include="Imagenes\dice6.png" />
+    <Content Include="Imagenes\Inicio.jpg" />
     <Content Include="Imagenes\medusa.png" />
     <Content Include="Imagenes\pinguino.png" />
     <Content Include="Imagenes\pulpo.png" />
